@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Калькулятор затрат</h1>
+    <h2>Укажите ваши покупки:</h2>
+    <label for="name">Наименование </label>
+    <input type="text" id="name">
+    <label for="price">Стоимость </label>
+    <input type="text" id="price"><label for="price">руб.</label>
+    <p>
+        <button class="add">добавить покупку</button>
+        <button class="remove">удалить покупку</button>
+    </p>
+    <br>
+    <p >Общая стоимость покупок:<span id="amountPrice"></span>  руб.</p>
+    <p>Количество покупок:<span id="amountProduct"></span></p>
+    <p >Самая дорогая покупка:<span id="nameExpensiveProduct"></span> <span id="priceExpensiveProduct"></span> руб.</p>
+
+
+    <script src="js/lib.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
