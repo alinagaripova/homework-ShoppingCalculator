@@ -11,17 +11,17 @@
     <h1>Калькулятор затрат</h1>
     <h2>Укажите ваши покупки:</h2>
     <label for="name">Наименование </label>
-    <input type="text" id="name">
+    <input type="text" id="name" class="name">
     <label for="price">Стоимость </label>
-    <input type="text" id="price"><label for="price">руб.</label>
+    <input type="text" id="price" class="price"><label for="price">руб.</label>
     <p>
-        <button id="add">добавить покупку</button>
-        <button id="remove">удалить покупку</button>
+        <button id="add" class="add">добавить покупку</button>
+        <button id="remove" class="remove">удалить покупку</button>
     </p>
     <br>
-    <p >Общая стоимость покупок:<span id="amountPrice"></span>  руб.</p>
+    <p >Общая стоимость покупок:<span id="amountPrice"></span></p>
     <p>Количество покупок:<span id="amountProduct"></span></p>
-    <p >Самая дорогая покупка:<span id="nameExpensiveProduct"></span> <span id="priceExpensiveProduct"></span> руб.</p>
+    <p >Самая дорогая покупка: <span id="priceExpensiveProduct"></span></p>
 
 
     <script src="js/lib.js" type="module"></script>
