@@ -6,22 +6,24 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <h1>Калькулятор затрат</h1>
-    <h2>Укажите ваши покупки:</h2>
-    <label for="name">Наименование </label>
-    <input type="text" id="name" class="name">
-    <label for="price">Стоимость </label>
-    <input type="text" id="price" class="price"><label for="price">руб.</label>
+    <h4 class="text-muted">Укажите ваши покупки:</h4>
+    <label for="name" class="text-muted" >Наименование </label>
+    <input type="text" id="name" class="name form-control-sm">
+    <label for="price" class="text-muted">Стоимость </label>
+    <input type="text" id="price" class="price form-control-sm"><label for="price" class="text-muted"> руб.</label>
     <p>
-        <button id="add" class="add">добавить покупку</button>
-        <button id="remove" class="remove">удалить покупку</button>
+        <button id="add" class="add btn btn-success">добавить покупку</button>
     </p>
     <br>
-    <p >Общая стоимость покупок:<span id="amountPrice"></span></p>
-    <p>Количество покупок:<span id="amountProduct"></span></p>
-    <p >Самая дорогая покупка: <span id="priceExpensiveProduct"></span></p>
+    <p class="result">Общая стоимость покупок:<span id="amountPrice"></span></p>
+    <p class="result">Количество покупок:<span id="amountProduct"></span></p>
+    <p class="result">Самая дорогая покупка: <span id="priceExpensiveProduct"></span></p>
 
 
     <script src="js/lib.js" type="module"></script>

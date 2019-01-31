@@ -14,14 +14,6 @@ export const amount = {
         }
         return result;
     },
-
-    remove(item) {
-        const index = this.items.indexOf(item);
-        if (index !== -1) {
-            this.items.splice(index, 1);
-        }
-    },
-
     findMoreExpensiveProduct() {
        let price = this.items[0].price;
        let name = this.items[0].name;
@@ -31,7 +23,7 @@ export const amount = {
                 name = item.name;
             }
         }
-        return name + ' ' + price + 'руб.';
+        return name + ' ' + price + ' руб.';
     }
 };
 
