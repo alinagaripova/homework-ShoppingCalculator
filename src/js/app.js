@@ -8,16 +8,6 @@ import {amount, Product} from "./lib.js";
     const addEl = document.getElementById('add');
     const removeEl = document.getElementById('remove');
 
-    // function reactToAddClick() {
-    //     const name = nameEl.value;
-    //     const price = parseInt(priceEl.value);
-    //     const product = new Product(name, price);
-    //
-    //     amount.items.push(product);
-    //     amountPriceEl.textContent = amount.sum() + ' руб.';
-    //     amountProductEl.textContent = amount.items.length;
-    // }
-
     addEl.addEventListener('click', function (evt) {
         const name = nameEl.value;
         const price = parseInt(priceEl.value);

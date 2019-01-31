@@ -6,7 +6,7 @@ export class Product {
     }
 }
 export const amount = {
-    items: [1],
+    items: [],
     sum() {
         let result = 0;
         for (const item of this.items) {
@@ -25,15 +25,13 @@ export const amount = {
     findMoreExpensiveProduct() {
        let price = this.items[0].price;
        let name = this.items[0].name;
-       console.log(price);
         for (const item of this.items) {
             if (price < item.price) {
                 price = item.price;
                 name = item.name;
             }
         }
-        let result = name + ' ' + price;
-        return result;
+        return name + ' ' + price + 'руб.';
     }
 };
 
