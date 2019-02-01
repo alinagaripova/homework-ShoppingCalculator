@@ -1,8 +1,9 @@
-import {amount} from "../src/js/lib";
+import {amount, Product} from "../src/js/lib.js";
+
 
 test ('should calculate sum', () => {
-    const items = [100, 200, 300];
-    const result = amount.sum(items);
+    amount.items = [new Product('', 100), new Product('', 200), new Product('', 300)];
+    const result = amount.sum();
 
     expect(result).toBe(600);
 
