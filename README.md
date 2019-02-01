@@ -1,2 +1,2 @@
 # Homework Shopping Calculator
-[![Build Status](https://travis-ci.org/alinagaripova/homework-ShoppingCalculator.svg?branch=master)](https://travis-ci.org/alinagaripova/homework-ShoppingCalculator)
+[![Build Status](https://travis-ci.org/alinagaripova/homework-ShoppingCalculator.svg?branch=master)](https://travis-ci.org/alinagaripova/homework-ShoppingCalculator) [![codecov](https://codecov.io/gh/alinagaripova/homework-ShoppingCalculator/branch/master/graph/badge.svg)](https://codecov.io/gh/alinagaripova/homework-ShoppingCalculator)
