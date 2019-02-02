@@ -8,3 +8,10 @@ test ('should calculate sum', () => {
     expect(result).toBe(600);
 
 });
+test ('should calculate MoreExpensiveProduct', () => {
+    amount.items = [new Product('Помидоры', 100), new Product('Сыр', 200), new Product('Мясо', 300)];
+    const result = amount.findMoreExpensiveProduct();
+
+    expect(result).toBe('Мясо ' + 300 + ' руб.');
+
+});
