@@ -11,14 +11,18 @@ const removeEl = document.getElementById('remove');
 addEl.addEventListener('click', function (evt) {
     const name = nameEl.value;
     const price = parseInt(priceEl.value);
-    const product = new Product(name, price);
+    if (price > 0) {
+        const product = new Product(name, price);
 
-    amount.items.push(product);
+        amount.items.push(product);
 
-    amountPriceEl.textContent = amount.sum() + ' руб.';
-    amountProductEl.textContent = amount.items.length;
+        amountPriceEl.textContent = amount.sum() + ' руб.';
+        amountProductEl.textContent = amount.items.length;
 
-    priceExpProductEl.textContent = amount.findMoreExpensiveProduct();
+        priceExpProductEl.textContent = amount.findMoreExpensiveProduct();
+    } else {
+        amountPriceEl.textContent = ' Покупка не добавлена.Введите положительное число в поле "Стоимость".'
+    }
 });
 
 
