@@ -1,4 +1,5 @@
 import {Amount, Product} from "./lib.js";
+import {AmountInMemoryStorage, AmountLocalStorage} from "./storage.js";
 
 const nameEl = document.getElementById('name');
 const priceEl = document.getElementById('price');
@@ -9,7 +10,7 @@ const addEl = document.getElementById('add');
 const removeEl = document.getElementById('remove');
 
 
-const amount = new Amount();
+const amount = new Amount(new AmountLocalStorage());
 
 addEl.addEventListener('click', function (evt) {
     const name = nameEl.value;
