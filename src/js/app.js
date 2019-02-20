@@ -1,4 +1,4 @@
-import {amount, Product} from "./lib.js";
+import {Amount, Product} from "./lib.js";
 
 const nameEl = document.getElementById('name');
 const priceEl = document.getElementById('price');
@@ -8,13 +8,17 @@ const priceExpProductEl = document.getElementById('priceExpensiveProduct');
 const addEl = document.getElementById('add');
 const removeEl = document.getElementById('remove');
 
+
+const amount = new Amount();
+
 addEl.addEventListener('click', function (evt) {
     const name = nameEl.value;
     const price = parseInt(priceEl.value);
     if (price > 0) {
         const product = new Product(name, price);
+        // const amount = new Amount();
 
-        amount.items.push(product);
+        amount.add(product);
 
         amountPriceEl.textContent = amount.sum() + ' руб.';
         amountProductEl.textContent = amount.items.length;
