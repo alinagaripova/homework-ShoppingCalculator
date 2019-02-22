@@ -1,5 +1,4 @@
-import {Product} from "../src/js/lib.js";
-import {AmountLocalStorage} from "../src/js/storage.js";
+import {AmountLocalStorage, Product} from "../src/js/storage.js";
 
 const amount = new AmountLocalStorage();
 

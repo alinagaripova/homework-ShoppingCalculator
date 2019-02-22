@@ -1,5 +1,4 @@
-import {Amount, Product} from "./lib.js";
-import {AmountInMemoryStorage, AmountLocalStorage} from "./storage.js";
+import {Product, AmountLocalStorage} from "./storage.js";
 
 const nameEl = document.getElementById('name');
 const priceEl = document.getElementById('price');
