@@ -1,29 +1,29 @@
-
 export class Product {
     constructor(name, price) {
         this.name = name;
         this.price = price;
     }
 }
-export const amount = {
-    items: [],
-    sum() {
-        let result = 0;
-        for (const item of this.items) {
-            result = result + item.price;
-        }
-        return result;
-    },
-    findMoreExpensiveProduct() {
-       let price = this.items[0].price;
-       let name = this.items[0].name;
-        for (const item of this.items) {
-            if (price < item.price) {
-                price = item.price;
-                name = item.name;
-            }
-        }
-        return name + ' ' + price + ' руб.';
+
+export class Amount {
+    constructor(storage) {
+        this.storage = storage;
     }
-};
+
+    get items() {
+        return this.storage.items;
+    }
+
+    add(item) { //количество покупок
+        this.storage.add(item);
+    }
+
+    sum(item) { //общая стоимость покупок
+        this.storage.sum(item);
+    }
+
+    findMoreExpensiveProduct(item) { //самая дорогая покупка
+        this.storage.findMoreExpensiveProduct(item);
+    }
+}
 
