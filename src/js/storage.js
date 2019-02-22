@@ -43,6 +43,10 @@ export class AmountLocalStorage {
         return name + ' ' + price + ' руб.';
     }
 
+    remove() {
+        localStorage.removeItem('products');
+    }
+
     save() {
         localStorage.setItem('products', JSON.stringify(this.items));
     }

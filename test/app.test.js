@@ -1,5 +1,7 @@
-import {amount, Product} from "../src/js/lib.js";
+import {Product} from "../src/js/lib.js";
+import {AmountLocalStorage} from "../src/js/storage.js";
 
+const amount = new AmountLocalStorage();
 
 test ('should calculate sum', () => {
     amount.items = [new Product('', 100), new Product('', 200), new Product('', 300)];
