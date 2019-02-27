@@ -32,7 +32,7 @@ addEl.addEventListener('click', function (evt) {
 });
 
 removeEl.addEventListener('click', (evt) => {
-    amount.remove();
+    amount.clear();
     amountProductEl.textContent = '0';
     amountPriceEl.textContent = '0';
     priceExpProductEl.textContent = ' - ';
