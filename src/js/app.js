@@ -5,14 +5,14 @@ const priceEl = document.getElementById('price');
 const amountPriceEl = document.getElementById('amountPrice');
 const amountProductEl = document.getElementById('amountProduct');
 const priceExpProductEl = document.getElementById('priceExpensiveProduct');
-const addEl = document.getElementById('add');
+const formEl = document.getElementById('form');
 const errorEl = document.getElementById('error');
 const removeEl = document.getElementById('remove');
 
 
 const amount = new AmountLocalStorage();
 
-addEl.addEventListener('click', function (evt) {
+formEl.addEventListener('submit', function (evt) {
     const name = nameEl.value;
     const price = parseInt(priceEl.value);
     if (price > 0) {
