@@ -43,8 +43,8 @@ export class AmountLocalStorage {
         return name + ' ' + price + ' руб.';
     }
 
-    remove() {
-        localStorage.removeItem('products');
+    clear() {
+        localStorage.clear();
     }
 
     save() {
