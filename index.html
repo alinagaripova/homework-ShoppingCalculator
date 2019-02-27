@@ -11,25 +11,28 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Калькулятор затрат</h1>
-    <h4 class="text-muted">Укажите ваши покупки:</h4>
-    <label for="name" class="text-muted" >Наименование </label>
+<h1>Калькулятор затрат</h1>
+<h4 class="text-muted">Укажите ваши покупки:</h4>
+<form id="form">
+    <label for="name" class="text-muted">Наименование </label>
     <input type="text" id="name" class="name form-control-sm" autofocus>
     <label for="price" class="text-muted">Стоимость </label>
     <input type="number" id="price" class="price form-control-sm"><label for="price" class="text-muted"> руб.</label>
-    <p>
-        <button id="add" class="add btn btn-success">добавить покупку</button>
-        <button id="remove" class="add btn btn-danger">очистить покупки</button>
-    </p>
     <br>
-    <p id="error"></p>
-    <p class="result">Общая стоимость покупок: <span id="amountPrice"></span></p>
-    <p class="result">Количество покупок: <span id="amountProduct"></span></p>
-    <p class="result">Самая дорогая покупка: <span id="priceExpensiveProduct"></span></p>
+    <button type="submit" id="add" class="add btn btn-success">добавить покупку</button>
+</form>
+<p>
+    <button id="remove" class="add btn btn-danger">очистить покупки</button>
+</p>
+<br>
+<p id="error"></p>
+<p class="result">Общая стоимость покупок: <span id="amountPrice"></span></p>
+<p class="result">Количество покупок: <span id="amountProduct"></span></p>
+<p class="result">Самая дорогая покупка: <span id="priceExpensiveProduct"></span></p>
 
 
-    <script src="js/lib.js" type="module"></script>
-    <script src="js/app.js" type="module"></script>
-    <script src="js/storage.js" type="module"></script>
+<script src="js/lib.js" type="module"></script>
+<script src="js/app.js" type="module"></script>
+<script src="js/storage.js" type="module"></script>
 </body>
 </html>
