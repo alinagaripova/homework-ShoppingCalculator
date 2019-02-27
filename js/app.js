@@ -26,10 +26,13 @@ addEl.addEventListener('click', function (evt) {
     } else {
         errorEl.textContent = ' Покупка не добавлена.Введите положительное число в поле "Стоимость".'
     }
+    nameEl.value = ' ';
+    priceEl.value = ' ';
+
 });
 
 removeEl.addEventListener('click', (evt) => {
-   amount.remove();
+    amount.remove();
     amountProductEl.textContent = '0';
     amountPriceEl.textContent = '0';
     priceExpProductEl.textContent = ' - ';
